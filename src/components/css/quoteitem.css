@@ -1,16 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+
 .quote-container
 {
     padding: 10px;
     margin: 15px;
     width: 60%;
-    height: 10%;
+    min-height: 10%;
     background-color: #F5F5F5;
     border-radius: 5px;
     box-shadow: 4px -4px 4px 0px rgba(34, 60, 80, 0.2);
+    position:relative;
+    font-family: Geneva, Helvetica, sans-serif, Arial;
+}
+
+@media screen and (max-width: 760px) 
+{
+    .quote-container p 
+    {
+      font-size: 18px;
+    }
+  }
+
+.quote-container p 
+{
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 760px) 
+{
+    .quotes-containter 
+    {
+      width: 100%;
+      height: auto;
+    }
+    .quote-container p 
+    {
+      font-size: 18px;
+    }
+    .author 
+    {
+      display: none;
+    }
+    .taglist 
+    {
+      display: none;
+    }
 }
 
 .taglist
 {
-    position: absolute;
+    font-size:15px;
+    position: relative;
     bottom: 0px;
+    margin:10px;
+}
+
+.author
+{
+    position: relative;
+    margin:5px;
+}
+
+.likebutton-container
+{
+    position: absolute; 
+    bottom: 0px;
+    right: 0px;
+}
+
+.likebutton 
+{
+    border: none;
+    background-color: transparent;
+    color: darkgray;
+}
+
+.likebutton:focus 
+{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.likebutton.active 
+{
+    color: red;
 }
