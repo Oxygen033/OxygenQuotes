@@ -14,7 +14,7 @@ function Navbar({setTag} : NavbarProps)
     };
     return(
         <nav className='navbar'>
-            <h1>Oxygen033 Quotes Library</h1>
+            <h1>Oxygen033's Quotes Library</h1>
             <a href="#" onClick={SetTag} className='navlink'><p className='material-symbols-outlined'>home</p><p className='caption'>Home</p></a>
         </nav>
     );
